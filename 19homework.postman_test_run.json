@@ -1,0 +1,259 @@
+{
+	"id": "82f63a27-cb29-40dd-8f94-1a5a63f3eed6",
+	"name": "19homework",
+	"timestamp": "2025-06-29T12:44:49.682Z",
+	"collection_id": "44192342-afdd1a3d-c9a6-48b2-93b7-262afe100406",
+	"folder_id": 0,
+	"environment_id": "44192342-437e4006-4144-4280-a7d6-079329ed2799",
+	"totalPass": 11,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-06-29T12:44:48.769Z",
+	"totalFail": 5,
+	"results": [
+		{
+			"id": "1cb607c9-0fad-4f8e-9e21-a63e14691aa3",
+			"name": "http://localhost:3000/api/listingsAndReviews/10009999",
+			"url": "http://localhost:3000/api/listingsAndReviews/10009999",
+			"time": 42,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				42
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2c78dbb6-2b11-4d6d-867c-020cdc5c4f4b",
+			"name": "http://localhost:3000/api/listingsAndReviews/search/query?bedrooms=2&accommodates=2",
+			"url": "http://localhost:3000/api/listingsAndReviews/search/query?bedrooms=2&accommodates=2",
+			"time": 215,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				215
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a01aea92-bdc9-4676-9b7a-492e4b1ff79e",
+			"name": "http://localhost:3000/api/users",
+			"url": "http://localhost:3000/api/users",
+			"time": 65,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response time is less than 200ms": true,
+				"Response matches the expected schema": false,
+				"Email is in a valid format": true,
+				"Name is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response matches the expected schema": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response time is less than 200ms": true,
+					"Response matches the expected schema": false,
+					"Email is in a valid format": true,
+					"Name is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "86283300-83ee-4d5a-81ae-bb46a073e82d",
+			"name": "http://localhost:3000/api/users/0000004",
+			"url": "http://localhost:3000/api/users/0000004",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Response has required fields": false,
+				"Email is in a valid format": true,
+				"CreatedAt and updatedAt are in valid date format": true,
+				"Response body structure and data validation": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreatedAt and updatedAt are in valid date format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body structure and data validation": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Response has required fields": false,
+					"Email is in a valid format": true,
+					"CreatedAt and updatedAt are in valid date format": true,
+					"Response body structure and data validation": false
+				}
+			]
+		},
+		{
+			"id": "ad4bc70d-1b35-47af-bd91-963cc6345f42",
+			"name": "Get http://localhost:3000/api/users",
+			"url": "http://localhost:3000/api/users",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				32
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b0539b75-395d-44af-81ca-170720f0d198",
+			"name": "http://localhost:3000/api/users/0000004",
+			"url": "http://localhost:3000/api/users/0000004",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Response contains a message indicating successful deletion": true,
+				"DeletedDocument contains required fields": false,
+				"Ensure that deletedDocument fields are of the correct data types": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains a message indicating successful deletion": {
+					"pass": 1,
+					"fail": 0
+				},
+				"DeletedDocument contains required fields": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Ensure that deletedDocument fields are of the correct data types": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Response contains a message indicating successful deletion": true,
+					"DeletedDocument contains required fields": false,
+					"Ensure that deletedDocument fields are of the correct data types": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 425,
+	"collection": {
+		"requests": [
+			{
+				"id": "1cb607c9-0fad-4f8e-9e21-a63e14691aa3",
+				"method": "GET"
+			},
+			{
+				"id": "2c78dbb6-2b11-4d6d-867c-020cdc5c4f4b",
+				"method": "GET"
+			},
+			{
+				"id": "a01aea92-bdc9-4676-9b7a-492e4b1ff79e",
+				"method": "POST"
+			},
+			{
+				"id": "86283300-83ee-4d5a-81ae-bb46a073e82d",
+				"method": "PUT"
+			},
+			{
+				"id": "ad4bc70d-1b35-47af-bd91-963cc6345f42",
+				"method": "GET"
+			},
+			{
+				"id": "b0539b75-395d-44af-81ca-170720f0d198",
+				"method": "DELETE"
+			}
+		]
+	}
+}
